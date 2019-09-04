@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+    function getcity(){
+        let town= documnet.getElemntById("city").value;
+        let zip= document.getElementById("zipcode").value;
+        let fullcity = town + zip;
+        document.getElementById("result").innerHTML= fullcity;
+    }
+    </script>
+
+</head>
+    <body>
+    Enter city<input type="text" id="city"><br>
+    enter zipcode<input type="text" id ="zipcode"><br>
+        <button type="button" onclick="getcity()">click her </button>
+        <div id="result"></div>
+        </body>
+
+        </html>

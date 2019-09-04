@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script>
+        function getAddress(){
+         let Name =document.getElementById("name").value;
+        let Street=document.getElementById("street").value;
+        let Town = document.getElementById("city").value;
+        let State= document.getElementById("state").value;
+        let Zipcode= document.getElementById("state").value;
+        let fullAddress=Name +"<br>"+ Street +"<br>"+ Town +"," + State + "  " +Zipcode; 
+            document.getElementById("address").innerHTML=fullAddress;
+            
+        }
+    </script>
+    </head>
+    <body>
+    Name<input type="text" id="name"><br>
+        
+    Street<input type="text"id="street"><br>
+        
+    City<input type="tetx" id ="city">
+        
+    State <input type="text" id ="state">
+        
+    ZipCode<input type="text" id="zip"><br>
+        
+        <button type="button" onclick="getAddress()">Make Address</button>
+        <div id="address">
+        </div>
+    </body>
+</html>

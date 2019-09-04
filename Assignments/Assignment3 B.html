@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    < <meta charset="utf-8">
+        <script>
+             function applyScripture() {
+                let name = document.getElementById("nameInputBox").value;
+                let scripture = name + ", "+"Do not let your heart be troubled "+ " Trust in GOD !!" ;
+                document.getElementById("outputDiv").innerHTML= scripture ;
+            
+            }
+        </script>
+</head>
+
+<body>
+
+   please enter your name: <input type="text" id="nameInputBox" /><br>
+    <button type="button" onclick="applyScripture()"> verse</button>
+    <div id="outputDiv">
+    </div>
+    </body>
+</html>
